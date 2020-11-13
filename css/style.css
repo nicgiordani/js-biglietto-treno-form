@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  width: 50%;
+  height: 200px;
+  background-color: grey;
+  margin: auto;
+}
+.nome-passeggero {
+  float: left;
+  width: 30%;
+  height: 100%;
+  background-color: lightgrey;
+}
+.dati-passeggero {
+  float: left;
+  width: 70%;
+  height: 100%;
+  background-color: darkgrey;
+}
+#lista-top {
+  list-style: none;
+  margin-bottom: 30px;
+}
+#lista-top li {
+  display: inline-block;
+  margin-right: 20px;
+}
+#lista-bottom {
+  list-style: none;
+}
+#lista-bottom li {
+  display: inline-block;
+  margin-right: 20px;
+}
