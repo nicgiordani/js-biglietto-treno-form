@@ -13,16 +13,21 @@ h1 {
   margin: auto;
 }
 .nome-passeggero {
+  padding: 20px;
   float: left;
   width: 30%;
   height: 100%;
   background-color: lightgrey;
 }
 .dati-passeggero {
+  padding: 20px;
   float: left;
   width: 70%;
   height: 100%;
   background-color: darkgrey;
+}
+h2 {
+  margin-bottom: 20px;
 }
 #lista-top {
   list-style: none;
@@ -31,6 +36,10 @@ h1 {
 #lista-top li {
   display: inline-block;
   margin-right: 20px;
+  padding-left: 10px;
+  width: 20%;
+  height: 50px;
+
 }
 #lista-bottom {
   list-style: none;
@@ -38,4 +47,7 @@ h1 {
 #lista-bottom li {
   display: inline-block;
   margin-right: 20px;
+  padding-left: 10px;
+  width: 20%;
+  height: 50px;
 }

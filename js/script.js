@@ -13,6 +13,25 @@ bottoneGenera.addEventListener("click",
     var eta = document.getElementById('fascia-eta').value;
     console.log(eta);
 
+    var prezzoPerKm = 0.21;
+    var prezzoBase = numeroKm * prezzoPerKm;
+    console.log(prezzoBase);
+
+    var messaggio = "";
+    var sconto;
+
+    if (eta == "minorenne") {
+      messaggio = "Congratulazioni! Hai diritto allo sconto del 20%";
+      sconto = prezzoBase * 0.2;
+      document.getElementById('offerta').innerHTML = (sconto);
+    } else if (eta == "over65") {
+      messaggio = "Congratulazioni! Hai diritto allo sconto del 40%";
+      sconto = prezzoBase * 0.4;
+      console.log(messaggio);
+    } else {
+      sconto = 0;
+    }
+
   }
 );
 
