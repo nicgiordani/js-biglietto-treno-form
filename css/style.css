@@ -3,31 +3,123 @@
   margin: 0;
   padding: 0;
 }
-h1 {
-  text-align: center;
-}
-.container {
-  width: 50%;
-  height: 200px;
-  background-color: grey;
+.background {
+  position: relative;
+  width: 100%;
+  height: 500px;
   margin: auto;
 }
-.nome-passeggero {
+
+.title-container {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: blue;
+}
+h1 {
+  position: relative;
+  color: white;
+  font-size: 60px;
+  font-family: 'Goldman', cursive;
+  animation: movelogo 15s linear infinite;
+}
+@keyframes movelogo {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.container-top::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container-top {
+  margin: auto;
+  position: relative;
+  width: 70%;
+  top: 200px;
   padding: 20px;
+}
+.style {
+  margin: auto;
+  width: 33%;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  color: grey;
+  border: 2px solid blue;
+}
+.button-style {
+  margin-left: 6%;
+  float: left;
+  width: 40%;
+  height: 30px;
+  text-align: center;
+  border: 2px solid blue;
+  cursor: pointer;
+  color: blue;
+}
+.container-biglietto {
+  position: absolute;
+  background-color: blue;
+  width: 100%;
+  top: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+#title {
+  position: relative;
+  top: 30px;
+  left: 20%;
+  color: white;
+}
+.container-bottom-hidden {
+  width: 50%;
+  height: 200px;
+  margin: auto;
+  display: none;
+  border: 1px solid white;
+}
+.container-bottom-show {
+  position: relative;
+  top: 50px;
+  width: 70%;
+  height: 200px;
+  border: 1px solid white;
+  margin: auto;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.nome-passeggero {
+  font-family: 'Goldman', cursive;
+  padding: 20px;
+  color: white;
   float: left;
   width: 30%;
   height: 100%;
-  background-color: lightgrey;
+  border: 1px solid white;
 }
 .dati-passeggero {
   padding: 20px;
   float: left;
   width: 70%;
   height: 100%;
-  background-color: darkgrey;
+  border: 1px solid white;
 }
 h2 {
   margin-bottom: 20px;
+  font-family: 'Goldman', cursive;
 }
 #lista-top {
   list-style: none;
@@ -35,6 +127,10 @@ h2 {
 }
 #lista-top li {
   display: inline-block;
+  font-family: 'Goldman', cursive;
+  border: 2px solid white;
+  line-height: 50px;
+  color: white;
   margin-right: 20px;
   padding-left: 10px;
   width: 20%;
@@ -46,6 +142,8 @@ h2 {
 }
 #lista-bottom li {
   display: inline-block;
+  font-family: 'Goldman', cursive;
+  color: white;
   margin-right: 20px;
   padding-left: 10px;
   width: 20%;

@@ -40,5 +40,31 @@ bottoneGenera.addEventListener("click",
     var numeroCP = Math.floor(Math.random() * 100000) + 1000;
     document.getElementById('cp').innerHTML = numeroCP;
 
+    var mostraBiglietto = document.getElementById("hidden");
+    mostraBiglietto.classList.remove ("container-bottom-hidden");
+    mostraBiglietto.classList.add ("container-bottom-show");
+
+    var mostraTitolo = document.getElementById("title");
+    mostraTitolo.classList.remove ("hidden");
+    mostraTitolo.classList.add ("show");
+
+
+
+  }
+);
+
+var bottoneAnnulla = document.getElementById('annulla');
+bottoneAnnulla.addEventListener("click",
+  function () {
+
+    var mostraBiglietto = document.getElementById("hidden");
+    mostraBiglietto.classList.remove ("container-bottom-show");
+    mostraBiglietto.classList.add ("container-bottom-hidden");
+
+    var mostraTitolo = document.getElementById("title");
+    mostraTitolo.classList.remove ("show");
+    mostraTitolo.classList.add ("hidden");
+
+
   }
 );

@@ -3,53 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
-
-  <h1>calcola il prezzo del tuo biglietto</h1>
-
-  <div class="container">
-    <input id="nome" type="text" name="" value="" placeholder="Nome-cognome">
-    <input id="chilometri" type="text" name="" value="" placeholder="Km">
-    <select id="fascia-eta" class="" name="eta">
-      <option value="minorenne">Minorenne</option>
-      <option value="maggiorenne">Maggiorenne</option>
-      <option value="over65">Over 65</option>
-    </select>
-    <button id="genera" type="button" name="button">Genera</button>
-    <button type="button" name="button">Annulla</button>
-  </div>
-  <h1>Il tuo biglietto</h1>
-
-
-  <div class="container">
-    <div class="nome-passeggero">
-      <h2>Nome del Passeggero</h2>
-      <h3 id="nome-passeggero"></h3>
+  <div class="background">
+    <div class="title-container">
+      <h1>calcola il prezzo del tuo biglietto</h1>
     </div>
 
-    <div class="dati-passeggero">
-      <ul id="lista-top">
-        <li>Offerta</li>
-        <li>Carrozza</li>
-        <li>Codice CP</li>
-        <li>Costo biglietto</li>
-      </ul>
-      <ul id="lista-bottom">
-        <li id="offerta"></li>
-        <li id="carrozza"></li>
-        <li id="cp"></li>
-        <li id="prezzo"></li>
-      </ul>
+    <div class="container-top">
+      <input id="nome" class="style" type="text" name="" value="" placeholder="Inserisci nome">
+      <input id="chilometri" class="style" type="text" name="" value="" placeholder="Inserisci numero Km">
+      <select id="fascia-eta" class="style" class="" name="eta">
+        <option value="minorenne">Minorenne</option>
+        <option value="maggiorenne">Maggiorenne</option>
+        <option value="over65">Over 65</option>
+      </select>
+      <button id="genera" class="button-style" type="button" name="button">Genera</button>
+      <button id="annulla" class="button-style" type="button" name="button">Annulla</button>
     </div>
   </div>
+  <div class="container-biglietto">
+    <h1 id="title" class="hidden">Il tuo biglietto</h1>
+    <div id="hidden" class="container-bottom-hidden">
+      <div class="nome-passeggero">
+        <h2>Nome del Passeggero</h2>
+        <h3 id="nome-passeggero"></h3>
+      </div>
 
+      <div class="dati-passeggero">
+        <ul id="lista-top">
+          <li>Offerta</li>
+          <li>Carrozza</li>
+          <li>Codice CP</li>
+          <li>Costo biglietto</li>
+        </ul>
+        <ul id="lista-bottom">
+          <li id="offerta"></li>
+          <li id="carrozza"></li>
+          <li id="cp"></li>
+          <li id="prezzo"></li>
+        </ul>
+      </div>
+    </div>
 
-
-
+  </div>
   <script src="js/script2.js"></script>
 </body>
 </html>
